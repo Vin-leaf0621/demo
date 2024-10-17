@@ -1,0 +1,128 @@
+.bizRule {
+  margin-bottom: var(--space-64);
+  display: flex;
+  height: 100%;
+
+  .left {
+    width: 200px;
+    background: var(--color-white);
+    margin-right: var(--space-16);
+    border-radius: var(--border-radius-2);
+    padding: var(--space-24) var(--space-16);
+
+    .title {
+      font: var(--font-16);
+      font-weight: 500;
+      color: var(--font-color-primary);
+      padding-bottom: var(--space-16);
+      border-bottom: 1px solid var(--bg-color-divider);
+      margin-bottom: var(--space-16);
+    }
+  }
+
+  .item {
+    padding: var(--space-8);
+    font: var(--font-14);
+    color: var(--font-color-secondary);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .name {
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .activeItem {
+    background: var(--primary-color-10);
+    color: var(--primary-color);
+  }
+
+  .right {
+    flex: 1;
+  }
+
+  .rulesContent {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    :global {
+      .ant-form {
+        flex: 1;
+      }
+    }
+  }
+
+  .moduleList {
+    background: var(--color-white);
+    padding: var(--space-24);
+    border-radius: var(--border-radius-2);
+    margin-top: var(--space-16);
+    height: 100%;
+  }
+
+  .empty {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ruleItem {
+    .title {
+      font: var(--font-14);
+      font-weight: 500;
+      color: var(--font-color-primary);
+
+      .required {
+        color: var(--error-color);
+      }
+    }
+
+    .tips {
+      font: var(--font-12);
+      color: var(--font-color-secondary);
+      margin-top: var(--space-8);
+    }
+
+    .imageUpload {
+      margin-top: var(--space-16);
+    }
+
+    .imageUploadTip {
+      font: var(--font-12);
+      color: var(--font-color-third);
+      margin-top: -24px;
+      margin-bottom: var(--space-24);
+    }
+  }
+
+  .footer {
+    position: fixed;
+    bottom: 0;
+    left: calc((100% - 1192px) / 2);
+    width: 1192px;
+    background: var(--color-white);
+    height: 64px;
+    box-shadow: 0 -2px 8px rgb(0 0 0 / 8%);
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .btn {
+      min-width: 65px;
+      margin-right: 8px;
+      padding: 0 var(--space-16);
+      height: 32px;
+
+      &:nth-last-child(1) {
+        margin-right: 0;
+      }
+    }
+  }
+}

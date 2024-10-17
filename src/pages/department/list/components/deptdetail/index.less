@@ -1,0 +1,53 @@
+.deptDetail {
+  padding-bottom: 23px;
+
+  :global {
+    .ant-drawer-header-title {
+      flex-direction: row-reverse;
+    }
+  }
+
+  .header {
+    padding-bottom: var(--space-24);
+    border-bottom: 1px solid var(--bg-color-divider);
+  }
+
+  .name {
+    display: flex;
+    align-items: center;
+
+    > p {
+      font: var(--font-24);
+      font-weight: 500;
+    }
+  }
+
+  .img {
+    width: 32px;
+    height: 32px;
+    margin-right: var(--space-8);
+  }
+
+  .infos {
+    margin-top: var(--space-24);
+  }
+
+  .intorTitle {
+    margin: var(--space-24) 0;
+    font: var(--font-16);
+    font-weight: 500;
+  }
+
+  .footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: var(--space-16) var(--space-24);
+    border-top: 1px solid var(--border-color);
+    display: flex;
+    justify-content: flex-end;
+    column-gap: var(--space-8);
+    background: var(--color-white);
+  }
+}

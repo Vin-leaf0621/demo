@@ -1,0 +1,59 @@
+.page {
+  display: flex;
+  min-height: 100%;
+
+  :global {
+    .ant-tabs {
+      flex: 1;
+    }
+
+    .ant-tabs-content,
+    .ant-tabs-tabpane {
+      height: 100%;
+    }
+
+    .ant-tabs-nav {
+      width: 200px;
+      background: var(--color-white);
+      padding: var(--space-24) 0;
+      border-radius: var(--border-radius-2);
+      margin: 0 !important;
+    }
+
+    .ant-tabs-tab {
+      margin: 0 !important;
+      color: var(--font-color-secondary);
+      font: var(--font-14);
+
+      &:hover {
+        background: var(--bg-color) !important;
+      }
+    }
+
+    .ant-tabs-ink-bar {
+      display: none;
+    }
+
+    .ant-tabs-tab-active {
+      background: var(--bg-color) !important;
+    }
+
+    .ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+      font: var(--font-14-b);
+      font-weight: 500;
+      text-shadow: none !important;
+      color: var(--font-color-primary) !important;
+    }
+
+    .ant-tabs-left
+      > .ant-tabs-content-holder
+      > .ant-tabs-content
+      > .ant-tabs-tabpane {
+      padding-left: 12px;
+    }
+  }
+
+  .content {
+    flex: 1;
+  }
+}

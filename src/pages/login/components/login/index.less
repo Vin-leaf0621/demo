@@ -1,0 +1,88 @@
+.login {
+  :global {
+    .manage-base-ant-input {
+      height: 40px;
+      padding: var(--space-8) var(--space-16);
+      border-radius: var(--border-radius-2);
+    }
+
+    .manage-base-ant-form-item {
+      margin-bottom: var(--space-16);
+    }
+  }
+
+  .code {
+    display: flex;
+
+    :global {
+      .manage-base-ant-form-item {
+        flex: 1;
+      }
+    }
+  }
+
+  .verifyImg {
+    margin-left: var(--space-8);
+    width: 117px;
+    height: 40px;
+    background: #fffdfa;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-2);
+
+    > img {
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+    }
+  }
+
+  .password {
+    :global {
+      .manage-base-ant-input-affix-wrapper {
+        padding: 0 var(--space-16);
+        border-radius: var(--border-radius-2);
+      }
+    }
+  }
+
+  .codeInput {
+    :global {
+      .manage-base-ant-input-affix-wrapper {
+        padding: 7px var(--space-16);
+        border-radius: var(--border-radius-2);
+      }
+
+      .manage-base-ant-input {
+        height: inherit;
+      }
+
+      .manage-base-ant-btn {
+        height: inherit;
+        padding: 0;
+        color: var(--primary-color);
+      }
+
+      .manage-base-ant-btn-link:disabled {
+        color: var(--font-color-disabled);
+      }
+    }
+  }
+
+  .loginBtn {
+    margin-top: var(--space-8);
+    width: 100%;
+    padding: var(--space-8) var(--space-16);
+    height: inherit;
+    font-weight: var(--font-weight-normal);
+    font-size: var(--font-size-16);
+    line-height: var(--line-height-22);
+  }
+
+  .forget {
+    text-align: right;
+    font: var(--font-14);
+    color: var(--font-color-secondary);
+    margin-top: var(--space-24);
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,92 @@
+.menu {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .searchIcon {
+    font-size: var(--font-size-14);
+    color: var(--font-color-disabled);
+  }
+
+  .empty {
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: var(--space-24);
+    font: var(--font-14);
+    color: var(--font-color-disabled);
+  }
+
+  .treeContent {
+    margin-top: var(--space-24);
+
+    .treeTitle {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-left: -24px;
+      width: 220px;
+      padding: var(--space-4);
+      border-radius: var(--border-radius-2);
+
+      > p {
+        &:first-child {
+          flex: 1;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+
+    .activeTitle {
+      background: var(--bg-color);
+    }
+
+    .parentNode {
+      padding: var(--space-4);
+    }
+
+    .normalStatus {
+      padding: 5px var(--space-8);
+      font: var(--font-12);
+      border-radius: var(--border-radius-2);
+    }
+
+    .notSetStatus {
+      color: var(--font-color-secondary);
+      border: 1px solid var(--border-color);
+      background: var(--bg-color-container);
+    }
+
+    .setStatus {
+      background: var(--info-color-10);
+      color: var(--info-color);
+    }
+
+    :global {
+      .ant-tree .ant-tree-treenode {
+        padding: var(--space-4) 0;
+      }
+
+      .ant-tree .ant-tree-node-content-wrapper {
+        font: var(--font-16);
+        padding: var(--space-4);
+        color: var(--font-color-primary);
+      }
+
+      .ant-tree .ant-tree-node-content-wrapper:hover {
+        background: transparent;
+      }
+
+      .ant-tree .ant-tree-switcher {
+        padding: var(--space-4);
+      }
+
+      .ant-tree .ant-tree-node-content-wrapper.ant-tree-node-selected {
+        background: transparent;
+      }
+    }
+  }
+}

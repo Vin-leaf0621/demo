@@ -1,0 +1,30 @@
+.addModal {
+  :global {
+    .ant-space {
+      flex: 1;
+      align-items: flex-start;
+
+      .ant-space-item {
+        width: 100%;
+      }
+    }
+
+    .ant-modal-close {
+      display: none;
+    }
+
+    .ant-form {
+      .formGroup {
+        margin-bottom: var(--space-24);
+
+        .formGroupTitle {
+          width: 82px;
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

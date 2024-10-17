@@ -1,0 +1,75 @@
+.pcTerminal {
+  margin-bottom: var(--space-32);
+
+  .address {
+    color: var(--font-color-primary);
+    font: var(--font-14);
+
+    p {
+      &:first-child {
+        margin-bottom: var(--space-8);
+      }
+    }
+
+    margin-bottom: var(--space-24);
+  }
+
+  :global {
+    .ant-tabs {
+      height: 100%;
+
+      > .ant-tabs-nav::before {
+        display: none;
+      }
+
+      .ant-tabs-nav .ant-tabs-nav-wrap {
+        justify-content: flex-start;
+      }
+
+      .ant-tabs-tab {
+        padding: 0 0 10px;
+
+        .ant-tabs-tab-btn {
+          color: var(--font-color-third) !important;
+        }
+      }
+
+      .ant-tabs-tab-active {
+        background: transparent !important;
+      }
+
+      .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+        color: var(--font-color-primary) !important;
+        text-shadow: none;
+      }
+
+      .ant-tabs-content-holder {
+        display: flex;
+      }
+
+      .ant-tabs-ink-bar {
+        display: inline-block;
+      }
+
+      .ant-tabs-content {
+        flex: 1;
+      }
+
+      .ant-tabs-tabpane {
+        height: 100%;
+      }
+
+      .ant-tabs-nav {
+        margin: 0 0 var(--space-24) 0;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}

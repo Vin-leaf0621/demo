@@ -1,0 +1,114 @@
+#root-master {
+  .tableLayout {
+    padding: var(--space-24);
+    background: var(--color-white);
+    border-radius: var(--border-radius-2);
+    height: 100%;
+    flex: 1;
+
+    .ant-table-thead {
+      .ant-table-cell {
+        &::before {
+          display: none;
+        }
+      }
+    }
+
+    .ant-table-cell {
+      word-break: break-word;
+    }
+
+    .ant-table-thead > tr > th {
+      font-weight: 500;
+      font-size: var(--font-size-14);
+      line-height: var(--line-height-22);
+      color: var(--font-color-primary);
+    }
+
+    .ant-table-tbody > tr > th {
+      color: var(--font-color-primary);
+    }
+
+    .ant-table-thead > tr > th,
+    .ant-table-tbody > tr > td,
+    .ant-table tfoot > tr > th,
+    .ant-table tfoot > tr > td {
+      padding: var(--space-16);
+    }
+
+    .ant-table-pagination {
+      .ant-pagination-item-active {
+        background-color: var(--primary-color);
+        font-weight: var(--font-weight-normal);
+
+        a {
+          color: var(--color-white);
+        }
+      }
+    }
+
+    .active {
+      background: var(--primary-color);
+    }
+
+    .inactive {
+      background: var(--border-color);
+    }
+
+    .btns {
+      display: flex;
+      margin-bottom: var(--space-16);
+
+      :global {
+        .ant-btn {
+          margin-right: var(--space-8);
+          padding: 5px var(--space-16);
+        }
+      }
+    }
+  }
+
+  .actionBtn {
+    position: relative;
+    margin-right: var(--space-16);
+    padding: 0;
+    color: var(--info-color);
+    height: inherit;
+
+    .ant-btn {
+      padding: 0 !important;
+    }
+
+    &::after {
+      position: absolute;
+      top: 50%;
+      right: -9px;
+      width: 1px;
+      height: 14px;
+      margin-top: -6px;
+      background: var(--bg-color-divider);
+      content: '';
+    }
+
+    &:disabled {
+      color: var(--font-color-disabled) !important;
+    }
+
+    &:nth-last-child(1) {
+      margin-right: 0;
+
+      &::after {
+        display: none;
+      }
+    }
+
+    &:hover {
+      color: var(--info-color-hover);
+    }
+
+    &:active,
+    &:focus {
+      color: var(--info-color-active);
+    }
+  }
+}

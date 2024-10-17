@@ -1,0 +1,66 @@
+.hospitalBtns {
+  .linkBtn {
+    padding: 0;
+  }
+
+  .tips {
+    color: var(--font-color-third);
+    font: var(--font-12);
+    margin-top: var(--space-8);
+  }
+
+  .btn {
+    display: flex;
+    align-items: center;
+    padding: 5px var(--space-16);
+
+    &:hover {
+      .icon {
+        color: var(--primary-color);
+      }
+    }
+
+    .icon {
+      margin-right: 10px;
+      color: var(--font-color-primary);
+    }
+  }
+
+  .btns {
+    display: flex;
+    flex-direction: column;
+    margin-top: var(--space-8);
+  }
+
+  .item {
+    display: flex;
+    align-items: center;
+    height: 32px;
+    padding: 0 var(--space-8);
+    border: 1px solid var(--border-color);
+    background: var(--bg-color-container);
+    cursor: pointer;
+    margin-bottom: var(--space-8);
+    width: fit-content;
+
+    &:not(:last-child) {
+      margin-right: var(--space-24);
+    }
+  }
+
+  .name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-right: var(--space-4);
+  }
+
+  .icon {
+    font-size: var(--font-size-14);
+    color: var(--font-color-third);
+  }
+
+  .draggingItem {
+    opacity: 0.4;
+  }
+}

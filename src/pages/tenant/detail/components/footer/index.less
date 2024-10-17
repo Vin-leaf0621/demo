@@ -1,0 +1,24 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: calc((100% - 1192px) / 2);
+  width: 1192px;
+  background: var(--color-white);
+  height: 64px;
+  box-shadow: 0 -2px 8px rgb(0 0 0 / 8%);
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .btn {
+    min-width: 65px;
+    margin-right: 8px;
+    padding: 0 var(--space-16);
+    height: 32px;
+
+    &:nth-last-child(1) {
+      margin-right: 0;
+    }
+  }
+}

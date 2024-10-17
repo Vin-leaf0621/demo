@@ -1,0 +1,62 @@
+.mobileTerminal {
+  .tips {
+    font: var(--font-14);
+    color: var(--font-color-primary);
+  }
+
+  .item {
+    margin-top: var(--space-16);
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: var(--space-16);
+    border-radius: var(--border-radius-2);
+    background: var(--bg-color);
+  }
+
+  .left {
+    display: flex;
+  }
+
+  .image {
+    width: 40px;
+    height: 40px;
+    border-radius: var(--border-radius-2);
+    background: #e6e6e6;
+    overflow: hidden;
+
+    > img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .info {
+    margin-left: var(--space-8);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .title {
+    font: var(--font-14);
+    font-weight: 500;
+    color: var(--font-color-primary);
+  }
+
+  .channel,
+  .terminal {
+    font: var(--font-12);
+    color: var(--font-color-secondary);
+    margin-top: var(--space-4);
+  }
+
+  .addBtn {
+    margin-top: var(--space-16);
+    border-radius: var(--border-radius-2);
+    border: 1px dashed var(--border-color);
+    padding: 5px var(--space-16);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+}

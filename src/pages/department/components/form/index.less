@@ -1,0 +1,47 @@
+.formContent {
+  :global {
+    .formGroupTitle {
+      width: 84px;
+    }
+  }
+
+  .standrandDept {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .recommand {
+      display: flex;
+      align-items: center;
+      margin-top: var(--space-8);
+    }
+
+    .title {
+      font: var(--font-12);
+      color: var(--font-color-secondary);
+    }
+
+    .deptItem {
+      padding: var(--space-4) var(--space-8);
+      border-radius: var(--border-radius-2);
+      margin-left: var(--space-8);
+      background: var(--bg-color);
+      color: var(--font-color-secondary);
+      font: var(--font-12);
+      cursor: pointer;
+
+      &:hover {
+        color: var(--primary-color);
+      }
+    }
+
+    .active {
+      color: var(--primary-color-active);
+      background: var(--primary-color-10);
+    }
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+}

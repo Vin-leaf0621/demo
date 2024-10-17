@@ -1,0 +1,60 @@
+.bizRule {
+  height: 100%;
+  position: relative;
+
+  :global {
+    .ant-tabs {
+      flex: 1;
+    }
+
+    .ant-tabs-left > .ant-tabs-content-holder {
+      margin-left: 0;
+      border-left: 1px solid var(--bg-color-divider);
+    }
+
+    .ant-tabs-content,
+    .ant-tabs-tabpane {
+      height: 100%;
+    }
+
+    .ant-tabs-nav {
+      width: 165px;
+      height: 100%;
+      background: var(--color-white);
+      border-radius: var(--border-radius-2);
+    }
+
+    .ant-tabs-tab {
+      color: var(--font-color-secondary);
+      font: var(--font-14);
+    }
+
+    .ant-tabs-left > .ant-tabs-nav .ant-tabs-tab {
+      padding: var(--space-8);
+      text-align: left;
+    }
+
+    .ant-tabs .ant-tabs-tab-btn {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font: var(--font-14);
+      color: var(--font-color-secondary);
+      border-radius: var(--border-radius-2);
+    }
+
+    .ant-tabs-ink-bar {
+      display: none;
+    }
+
+    .ant-tabs-tab-active {
+      background: var(--primary-color-10) !important;
+
+      .ant-tabs-tab-btn {
+        font-weight: 500;
+        color: var(--primary-color) !important;
+        text-shadow: none !important;
+      }
+    }
+  }
+}

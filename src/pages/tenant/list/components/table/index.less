@@ -1,0 +1,23 @@
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.link {
+  color: var(--info-color);
+  cursor: pointer;
+}
+
+.btns {
+  display: flex;
+  align-items: center;
+
+  .btn {
+    margin-bottom: var(--space-16);
+    margin-right: var(--space-8);
+
+    &:nth-last-child(1) {
+      margin-right: 0;
+    }
+  }
+}

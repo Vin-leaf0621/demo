@@ -1,0 +1,47 @@
+.yunPian {
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-2);
+  padding: var(--space-24) var(--space-24) 0;
+
+  .item {
+    display: flex;
+    font: var(--font-14);
+    color: var(--font-color-primary);
+    margin-bottom: var(--space-24);
+    align-items: baseline;
+
+    :global {
+      .ant-form-item {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .title {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-end;
+    width: 72px;
+    text-align: right;
+    margin-right: var(--space-8);
+  }
+
+  .required {
+    display: inline-block;
+    margin-right: var(--space-4);
+    color: #ff4d4f;
+    font-size: var(--font-size-14);
+    font-family: SimSun, sans-serif;
+    line-height: 1;
+  }
+
+  .marBottom {
+    margin-bottom: var(--space-16);
+  }
+}
+
+.btns {
+  margin-bottom: var(--space-40);
+  margin-top: var(--space-24);
+}

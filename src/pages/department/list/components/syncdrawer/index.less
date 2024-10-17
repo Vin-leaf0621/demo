@@ -1,0 +1,23 @@
+.syncDrawer {
+  position: relative;
+  padding-bottom: 23px;
+
+  :global {
+    .ant-form-item-row {
+      align-items: baseline;
+    }
+  }
+
+  .footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: var(--space-16) var(--space-24);
+    border-top: 1px solid var(--border-color);
+    display: flex;
+    justify-content: flex-end;
+    column-gap: var(--space-8);
+    background: var(--color-white);
+  }
+}

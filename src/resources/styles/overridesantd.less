@@ -1,0 +1,162 @@
+.ant-pro,
+.ant-app {
+  height: 100%;
+}
+
+.ant-app {
+  display: flex;
+  flex-direction: column;
+}
+
+// modal
+.ant-modal-wrap {
+  .ant-modal {
+    .ant-modal-content {
+      padding: 0;
+
+      .ant-modal-header {
+        margin-bottom: 0;
+        padding: var(--space-16) var(--space-24);
+        border-bottom: 1px solid var(--bg-color-divider);
+      }
+
+      .ant-modal-body {
+        padding: var(--space-24);
+        box-shadow: inset 0 -1px 0 rgb(0 0 0 / 6%);
+      }
+
+      .ant-modal-footer {
+        margin-top: 0;
+        border-top: 1px solid var(--bg-color-divider);
+        padding: var(--space-16) var(--space-24);
+      }
+    }
+  }
+}
+
+// popconfirm
+.ant-popover {
+  .ant-popover-content {
+    .ant-popover-inner {
+      padding: var(--space-16);
+      box-shadow: 0 2px 8px 4px rgb(0 0 0 / 10%);
+    }
+
+    .ant-popconfirm-message {
+      margin-bottom: var(--space-16);
+    }
+
+    .ant-btn.ant-btn-sm {
+      height: 32px;
+      padding: var(--space-4) var(--space-16);
+    }
+  }
+}
+
+// tabs
+.ant-tabs {
+  height: 100%;
+
+  .ant-tabs-nav .ant-tabs-nav-wrap {
+    justify-content: center;
+  }
+
+  .ant-tabs-tab {
+    color: var(--font-color-third);
+    padding: 0 0 10px;
+  }
+
+  .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+    color: var(--font-color-primary);
+    text-shadow: none;
+  }
+
+  .ant-tabs-content-holder {
+    display: flex;
+  }
+
+  .ant-tabs-content {
+    flex: 1;
+  }
+
+  .ant-tabs-tabpane {
+    height: 100%;
+  }
+
+  .ant-tabs-nav {
+    margin: 0 0 var(--space-24) 0;
+  }
+}
+
+// Drawer
+.ant-drawer {
+  .ant-drawer-header-title {
+    flex-direction: row-reverse;
+  }
+
+  .ant-drawer-close {
+    margin-inline-end: 0;
+    line-height: 1.5;
+    float: right;
+  }
+
+  .ant-drawer-footer {
+    padding: var(--space-16) var(--space-24);
+    display: flex;
+    justify-content: flex-end;
+    column-gap: var(--space-8);
+  }
+}
+
+// Steps
+.ant-steps {
+  .ant-steps-item-icon {
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+  }
+
+  .ant-steps-item-wait .ant-steps-item-icon {
+    border-color: var(--font-color-third);
+    background: inherit;
+  }
+
+  .ant-steps-item-finish .ant-steps-item-icon {
+    border-color: var(--primary-color);
+    background: inherit;
+  }
+
+  .ant-steps-item-title {
+    font: var(--font-16);
+    color: var(--font-color-third);
+    line-height: var(--line-height-24);
+  }
+
+  .ant-steps-item-title::after {
+    top: 12px;
+  }
+
+  .ant-steps-item-wait .ant-steps-item-icon > .ant-steps-icon {
+    color: var(--font-color-third);
+  }
+}
+
+.ant-table-wrapper {
+  .ant-table-cell {
+    word-break: break-all;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  td {
+    &:empty {
+      &::before {
+        display: block;
+        content: '-';
+        color: var(--font-color-disabled);
+      }
+    }
+  }
+}

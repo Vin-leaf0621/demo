@@ -1,0 +1,41 @@
+.modal {
+  .title {
+    padding: var(--space-4) var(--space-8);
+    border-radius: var(--border-radius-2);
+    background: var(--bg-color-label);
+    columns: var(--font-color-primary);
+    font: var(--font-14);
+    display: inline-block;
+    margin-bottom: var(--space-16);
+    color: var(--font-color-third);
+  }
+
+  :global {
+    .ant-form-item .ant-form-item-label > label {
+      width: 88px;
+      justify-content: flex-end;
+    }
+  }
+
+  .hisSearch {
+    display: flex;
+    font: var(--font-14);
+    align-items: baseline;
+    margin-bottom: var(--space-24);
+
+    > p {
+      margin-left: var(--space-8);
+    }
+
+    :global {
+      .ant-btn {
+        padding: 0;
+        height: inherit;
+      }
+
+      .ant-form-item {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

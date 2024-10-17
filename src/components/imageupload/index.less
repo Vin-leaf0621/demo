@@ -1,0 +1,53 @@
+.imageUpload {
+  :global {
+    .ant-upload.ant-upload-select-picture-card {
+      background: #f7f7f7;
+    }
+  }
+}
+
+.uploadBtn {
+  .uploadBtnText {
+    margin-top: 8px;
+    color: rgb(0 0 0 / 65%);
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+.imgCrop {
+  :global {
+    .ant-slider .ant-slider-track {
+      background-color: #65dbc4;
+    }
+
+    .ant-slider:hover .ant-slider-track {
+      background-color: @primary-color;
+    }
+
+    .ant-slider .ant-slider-handle::after {
+      box-shadow: 0 0 0 2px #65dbc4;
+    }
+
+    .ant-slider .ant-slider-handle:hover::after {
+      box-shadow: 0 0 0 4px @primary-color;
+    }
+
+    .ant-btn-primary {
+      background-color: @primary-color;
+    }
+
+    .ant-btn-primary:not(:disabled):hover {
+      background-color: #65dbc4;
+    }
+
+    .ant-btn-default:not(:disabled):hover {
+      color: #65dbc4;
+      border-color: #65dbc4;
+    }
+
+    .ant-btn-primary:not(:disabled):active {
+      background-color: #65dbc4;
+    }
+  }
+}
